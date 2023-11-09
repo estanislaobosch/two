@@ -1,0 +1,14 @@
+name: Pull Request
+
+on:
+  pull_request:
+
+jobs:
+  variables:
+    name: 'Set runtime variables'
+    runs-on: stan-runners
+    steps:
+      - name: 'Hello Pull'
+        id: helloWorld
+        run: |
+          echo "Hello World"
